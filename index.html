@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o meu amor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Música de Fundo. -->
+    <audio id="bg-music" loop>
+        <source src="infrunami.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tela de Início (Gatilho para música e animação) -->
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1>Tenho uma surpresa para você...</h1>
+            <p>Ligue o som e clique no coração para começar ❤️</p>
+            <button id="start-btn"><i class="fa-solid fa-heart"></i></button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div id="main-content" class="hidden">
+        
+        <!-- Partículas de Fundo -->
+        <div id="particles"></div>
+
+        <!-- Seção Hero -->
+        <section class="hero">
+            <h1 class="fade-in-up delay-1">Para a pessoa mais<br><span class="highlight">especial</span> da minha vida</h1>
+            <p class="fade-in-up delay-2">Cada momento com você é como um sonho do qual eu não quero acordar.</p>
+            <div class="scroll-indicator fade-in-up delay-3">
+                <span>Deslize</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Seção Carrossel -->
+        <section class="carousel-section">
+            <h2 class="reveal">Nossos Momentos</h2>
+            <p class="subtitle reveal">Memórias que guardo com carinho MUITO CARINHO MESMO</p>
+            
+            <div class="carousel-container reveal">
+                <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <!-- Foto 1 -->
+                        <li class="carousel-slide current-slide">
+                            <img class="carousel-image" src="sorriso.jpg" alt="Seu sorriso">
+                            <div class="slide-caption">Seu sorriso ilumina meu mundo!</div>
+                        </li>
+                        <!-- Foto 2 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="primeirosdate.jpg" alt="Primeiros dates">
+                            <div class="slide-caption">UM dos nossos primeiros dates.</div>
+                        </li>
+                        <!-- Foto 3 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="pedido.jpg" alt="O pedido">
+                            <div class="slide-caption">O dia do pedido que mudou tudo!</div>
+                        </li>
+                        <!-- Foto 4 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" style="object-fit: contain;" src="carne.jpg" alt="Comendo carne">
+                            <div class="slide-caption">Nossos momentos maravilhosos.</div>
+                        </li>
+                        <!-- Foto 5 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="shopping.jpg" alt="No shopping">
+                            <div class="slide-caption">Dia inesquecível.</div>
+                        </li>
+                        <!-- Foto 6 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="dormindo.jpg" alt="Dormindo">
+                            <div class="slide-caption">😴😴.</div>
+                        </li>
+                        <!-- Foto 7 -->
+                        <li class="carousel-slide">
+                            <img class="carousel-image" src="raiva.jpg" alt="Brava">
+                            <div class="slide-caption">Até quando fica brava eu te amo!</div>
+                        </li>
+                        <!-- Vídeo 1 -->
+                        <li class="carousel-slide">
+                            <video class="carousel-video" src="videonosso.mp4" autoplay loop muted playsinline></video>
+                            <div class="slide-caption">❤️.</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </section>
+
+        <!-- Seção de Declaração Final -->
+        <section class="declaration-section">
+            <h2 class="reveal">Meu Amor,</h2>
+            <div class="letter-container reveal">
+                <div class="heart-lock" id="unlock-heart">
+                    <i class="fa-solid fa-heart pulse"></i>
+                    <span>Clique em mim</span>
+                </div>
+                
+                <div class="letter-content" id="secret-message">
+                    <p>Eu queria encontrar as palavras certas para dizer o quanto eu te AMO, mas a verdade é que o meu amor por você não cabe em um texto. Você é a mulher mais linda desse mundo, e só de ouvir a sua voz meu coração acelera.</p>
+                    <p>Obrigado por ser essa pessoa incrível, por me apoiar, por me aturar e por me fazer tão feliz.</p>
+                    <p>Por essa mini carta eu declaro oficialmente que a gente vai ter uma familia junto(sim,eu falo do bebê)tenho certeza que você vai ser uma ótima e a melhor mãe do mundo.</p>
+                    <p>Eu te amo muito!</p>
+                    <div class="signature">Com todo amor do mundo.</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>De Vicktor - feito com ❤️ para você.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
